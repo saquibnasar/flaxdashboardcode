@@ -10,6 +10,8 @@
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 48px;
+    gap: 24px;
     .navbar-brand{
         background: transparent;
         border: none;
@@ -35,6 +37,12 @@
             justify-content: center;
             align-items: center;
 
+        }
+        .setting-toggler-icon{
+          color: #000000;
+          border-right: 3px solid rgba(163, 163, 163, 0.6);
+          border-radius: unset;
+          background: transparent ;
         }
     }
     .navbar-collapse{
@@ -152,6 +160,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
               input:checked + label svg.moon {
                 fill:#fff;
               }
+        }
+        .SettingProfile{
+    background: #D9D9D9;
+    border-radius: 80px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25rem;
+    border: none;
+    .SettingProfile_user{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #252525;
+      gap: 8px;
+      span{
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        color: #A3A3A3;
+        font-size: 1rem;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #A3A3A3;
+        border-radius: 60px;
+      }
+      
+    }
         }
     }
 };

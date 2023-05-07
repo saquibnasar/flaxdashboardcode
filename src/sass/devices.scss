@@ -24,7 +24,7 @@
         border-radius: 32px;
         display: flex;
         justify-content: space-between;
-        padding: 70px 48px;
+        padding: 100px 130px;
         margin: 0 48px;
         margin: auto 48px;
     .devices_content_left,
@@ -61,6 +61,11 @@ border-radius: 80px;
 padding: 18px 20px;
 margin-top: 48px;
 cursor: pointer;
+        }
+    }
+    .devices_content_left{
+        .devices-primary{
+            padding: 18px 40px;
         }
     }
     .devices_content_border{

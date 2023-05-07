@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="d-flex">
       <SIdebar/>
-      <div className="d-flex flex-direction-column">
+      <div className="d-flex flex-direction-column w-78">
       <Topbar/>
       <TeamCard/>
       </div>

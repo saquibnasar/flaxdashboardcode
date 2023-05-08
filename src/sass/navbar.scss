@@ -78,6 +78,7 @@
         /* padding: 1rem; */
         justify-content: center;
         padding-left: 70px;
+        padding-right: 24px;
         }
         input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -135,7 +136,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 transition: 0.5s;
               }
               label:active:after{ 
-                width: 100%; 
+                width: 50%; 
               }
               label svg {
                 position: absolute;

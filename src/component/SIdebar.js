@@ -27,7 +27,7 @@ export default function SIdebar() {
         </li>
       
         <li className="nav-item">
-          <NavLink className="nav-link" aria-current="page" to="/fetflaxdevices"><FontAwesomeIcon icon={faBasketShopping} /> <div className='d-flex gap-2' >Get Flax Devices <FontAwesomeIcon icon={faShareSquare} /> </div></NavLink>
+          <NavLink className="nav-link" aria-current="page" to="/"><FontAwesomeIcon icon={faBasketShopping} /> <div className='d-flex gap-2' >Get Flax Devices <FontAwesomeIcon icon={faShareSquare} /> </div></NavLink>
         </li>
         <li className="nav-box">
         </li>

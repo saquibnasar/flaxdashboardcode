@@ -8,7 +8,7 @@
     margin-left: 16px;
     display: flex;
     margin-right: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     height: 100%;
     .sidebar{
         background: transparent;
@@ -315,12 +315,60 @@
             margin-bottom: 100px;
         }
         .admin_authentication{
+            .tgl {
+                display: none;
+                
+                // add default box-sizing for this scope
+                &,
+                &:after,
+                &:before,
+                & *,
+                & *:after,
+                & *:before,
+                & + .tgl-btn {
+                  box-sizing: border-box;
+                  &::selection {
+                    background: none;
+                  }
+                }
+                
+                + .tgl-btn {
+                  outline: 0;
+                  display: block;
+                  width: 4em;
+                  height: 2em;
+                  position: relative;
+                  cursor: pointer;
+                  user-select: none;
+                  &:after,
+                  &:before {
+                    position: relative;
+                    display: block;
+                    content: "";
+                    width: 50%;
+                    height: 100%;
+                  }
+                  
+                  &:after {
+                    left: 0;
+                  }
+                  
+                  &:before {
+                    display: none;
+                  }
+                }
+                
+                &:checked + .tgl-btn:after {
+                  left: 50%;
+                }
+              }
+              
             .tg-list-item{
 
                  .tgl-btn {
                     padding: 2px;
                     transition: all .2s ease;
-                    background: #fff;
+                    background: transparent;
                     border: 4px solid #f2f2f2;
                     border-radius: 2em;
                     &:after {
@@ -332,13 +380,38 @@
                   }
             .tgl-flat {
                 &:checked + .tgl-btn {
-                  border: 4px solid #7FC6A6;
+                  border: 4px solid rgba(255, 255, 255, 0.3);
                   &:after {
                     left: 50%;
-                    background: #7FC6A6;
+                    background: rgba(255, 255, 255, 0.3);
                   }
                 }
               }
+            }
+
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.3);
+                margin-bottom: 36px;
+            }
+            button{
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                color: #252525;
+                background: #FFFFFF;
+                border-radius: 80px;
+                padding: 18px 48px;
+                cursor: pointer;
             }
         }
     }

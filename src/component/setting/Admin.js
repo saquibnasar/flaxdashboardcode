@@ -18,8 +18,7 @@ export default function Admin() {
 </div>
     </div>
     <div className="admin_authentication">
-      <div className=''>
-
+      <div className='d-flex justify-content-between'>
       <h1>
       2-factor authentication 
       </h1>
@@ -35,10 +34,7 @@ export default function Admin() {
       We’ll ask you for a login code in addition to your password when
 you log in on a device we don’t recognise.
       </p>
-      <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email id"/>
-</div>
+   
 
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">enter number</label>
@@ -48,7 +44,7 @@ you log in on a device we don’t recognise.
       <div class="mb-3">
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter OTP"/>
       </div>
-      <div className=''>
+      <div className='d-flex justify-content-between'>
       <button type="button" class="btn btn-primary">Update</button>
       <button type="button" class="btn btn-primary">Cancel</button>
       </div>

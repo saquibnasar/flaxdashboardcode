@@ -109,7 +109,7 @@ export default function CreateCard() {
           <p>Live Profile Preview</p>
           <div className='signup_phone-container'>
             <img src='/phone_bannner.svg' className='img-fluid' alt='' />
-            <h3>{formData.name}</h3>
+            <h3>{formData.username}</h3>
             <h4>{formData.company}</h4>
             <h4>{formData.designation}</h4>
             <div className='signup_phone-boxs'>

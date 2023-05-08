@@ -57,12 +57,12 @@
     }
   
     .form {
-      padding: 0 130px;
+      padding: 0 125px;
       margin-top: 150px;
       .form_logo{
         display: flex;
-        flex-direction: column;
-        gap: 24px;
+        align-items: center;
+        gap: 16px;
         h1{
           font-family: 'Outfit';
           font-style: normal;
@@ -75,14 +75,12 @@
           
         }
       h2{
-        font-family: 'Outfit';
+        font-family: 'Inter';
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        color: $primary-color;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        color: $white-color;
       }
     }
     .form-text{
@@ -90,7 +88,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 24px;
-      line-height: 18px;
+      line-height: 24px;
       color: #F0F0F0;
       margin-bottom: 16px;
     }
@@ -130,7 +128,7 @@
         }
       }
       .btn-primary {
-        background: #78c4cb;
+ 
         border-radius: 32px;
         padding: 16px 32px;
         font-family: "Roboto";
@@ -138,18 +136,19 @@
         font-weight: 400;
         font-size: 16px;
         text-align: center;
-        color: #fff;
+        color: #fffaff;
         cursor: pointer;
         width: 100%;
         border: none;
-        margin-top: 100px;
-        background: #696969;
+        margin-top: 24px;
+        background: #6c3dd3;
         border-radius: 100px;
         transition: all 0.3s ease-in-out;
+        display: block;
       }
       .btn-primary:hover {
-        background: #fff;
-        color: #696969;
+        background: #fffaff;
+        color: #6c3dd3;
       }
       .instagram_input {
         width: 100%;

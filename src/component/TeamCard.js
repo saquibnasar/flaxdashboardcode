@@ -4,6 +4,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faShareSquare } from "@fortawesome/free-solid-svg-icons";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { Link} from "react-router-dom";
 export default function TeamCard() {
   return (
 <>
@@ -33,14 +34,14 @@ export default function TeamCard() {
     </div>
 </button>
 
-<button class="add_btn col-3">
+<Link to="/createCard" class="add_btn col-3">
     <span>
       <FontAwesomeIcon icon={faPlus} />
       </span>
     <p>
     Create New Cards
     </p>
-</button>
+</Link>
 
 </div>
 </>

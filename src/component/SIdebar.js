@@ -9,7 +9,6 @@ import { NavLink} from "react-router-dom";
 export default function SIdebar() {
   return (
     <nav className="sidebar">
-  
     <a className="sidebar-brand" href="/">
       <img className='img-fluid' src="/logofill.svg" alt=''/>
       </a>

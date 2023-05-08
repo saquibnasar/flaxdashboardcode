@@ -24,7 +24,7 @@ export default function Topbar(props) {
     <div className="navbar-collapse">
     
     {props.type?  
-    <button class="SettingProfile">
+    <button className="SettingProfile">
       <div className='SettingProfile_user'>
         <span>
       <FontAwesomeIcon icon={faUser} />
@@ -33,11 +33,11 @@ export default function Topbar(props) {
       </div>
       <FontAwesomeIcon icon={faAngleDown} />
     </button>:  
-    <button class="form-check">
+    <button className="form-check">
         <input type="checkbox" id="darkmode-toggle"/>
 <label for="darkmode-toggle">
   
-   <svg class="sun" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg className="sun" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
    <path d="M7.8737 12.5417C10.451 12.5417 12.5404 10.4523 12.5404 7.87501C12.5404 5.29768 10.451 3.20834 7.8737 3.20834C5.29637 3.20834 3.20703 5.29768 3.20703 7.87501C3.20703 10.4523 5.29637 12.5417 7.8737 12.5417Z" stroke="#111111" stroke-width="0.583333" stroke-linecap="round" stroke-linejoin="round"/>
    <path d="M20.1237 24.7917C22.701 24.7917 24.7904 22.7023 24.7904 20.125C24.7904 17.5477 22.701 15.4583 20.1237 15.4583C17.5464 15.4583 15.457 17.5477 15.457 20.125C15.457 22.7023 17.5464 24.7917 20.1237 24.7917Z" stroke="#111111" stroke-width="0.583333" stroke-linecap="round" stroke-linejoin="round"/>
    <path d="M20.1237 12.5417C22.701 12.5417 24.7904 10.4523 24.7904 7.87501C24.7904 5.29768 22.701 3.20834 20.1237 3.20834C17.5464 3.20834 15.457 5.29768 15.457 7.87501C15.457 10.4523 17.5464 12.5417 20.1237 12.5417Z" stroke="#111111" stroke-width="0.583333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -45,7 +45,7 @@ export default function Topbar(props) {
    </svg>
    
 
-   <svg class="moon" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg className="moon" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.332 1.66666H3.66536C2.3767 1.66666 1.33203 2.71133 1.33203 3.99999V6.33332C1.33203 7.62199 2.3767 8.66666 3.66536 8.66666H22.332C23.6207 8.66666 24.6654 7.62199 24.6654 6.33332V3.99999C24.6654 2.71133 23.6207 1.66666 22.332 1.66666Z" stroke="#111111" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M22.332 13.3333H3.66536C2.3767 13.3333 1.33203 14.378 1.33203 15.6666V18C1.33203 19.2886 2.3767 20.3333 3.66536 20.3333H22.332C23.6207 20.3333 24.6654 19.2886 24.6654 18V15.6666C24.6654 14.378 23.6207 13.3333 22.332 13.3333Z" stroke="#111111" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -54,7 +54,7 @@ export default function Topbar(props) {
     </button>}
 
     {props.type?  
-      <button class="SettingProfile">
+      <button className="SettingProfile">
       <div className='SettingProfile_user'>
         Share Your Profile
       </div>

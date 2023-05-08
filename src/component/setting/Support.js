@@ -8,7 +8,7 @@ export default function Support() {
         <h2>
         Support
         </h2>
-        <button class="devices-primary">Pro Plan</button>
+        <button className="devices-primary">Pro Plan</button>
       </div>
       <div className='subscription_member'>
         <h3>

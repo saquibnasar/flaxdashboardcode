@@ -10,7 +10,7 @@ export default function TeamCard() {
 <>
 <div className='teamCard row gap-3'>
     
-<button class="teamCard_btn col-3">
+<button className="teamCard_btn col-3">
     <span>
       <FontAwesomeIcon icon={faUser} />
       </span>
@@ -21,12 +21,12 @@ export default function TeamCard() {
     CTO at Investors Clinic
     </h4>
     <div className='d-flex gap-2'>
-    <button class="editCard">
+    <button className="editCard">
       <FontAwesomeIcon icon={faPencil} />
     Edit Card
    
 </button>
-    <button class="ShareCard">
+    <button className="ShareCard">
       <FontAwesomeIcon icon={faShareSquare} />
       Share Card
    
@@ -34,7 +34,7 @@ export default function TeamCard() {
     </div>
 </button>
 
-<Link to="/createCard" class="add_btn col-3">
+<Link to="/createCard" className="add_btn col-3">
     <span>
       <FontAwesomeIcon icon={faPlus} />
       </span>

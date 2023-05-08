@@ -8,7 +8,7 @@ export default function Subscription() {
         <h2>
         Team Subscription
         </h2>
-        <button class="devices-primary">Pro Plan</button>
+        <button className="devices-primary">Pro Plan</button>
       </div>
       <div className='subscription_member'>
         <h3>

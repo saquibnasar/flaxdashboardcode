@@ -18,7 +18,7 @@ Don’t have Flax Card
 <br/>
 Purchase them here.
 </p>
-<button class="devices-primary">Get Card</button>
+<button className="devices-primary">Get Card</button>
  
         </div>
         <div className='devices_content_border'></div>
@@ -36,7 +36,7 @@ If you already have the Flax Card
 <br/>
 simply activate them here.
 </p>
-<button class="devices-primary">Activate Card</button>
+<button className="devices-primary">Activate Card</button>
  
         </div>
      </div>

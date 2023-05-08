@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link} from "react-router-dom";
 export default function CreateCard() {
+  
+  const [formData,setFormData] = useState({
+    username: "",
+    company: "",
+    designation: "",
+  })
+
+  const handleChange = (event) => {
+    setFormData(prevformData =>{
+      return {
+        ...prevformData,
+        [event.target.name]: event.target.value,
+      }
+    })
+  }
   
   return (
   <>
@@ -33,6 +48,9 @@ export default function CreateCard() {
                     type='text'
                     placeholder=' '
                     required
+                    name="username"
+                    onChange={handleChange}
+                    value={formData.username}
                   />
                   <label className='did-floating-label'>
                   Name
@@ -49,6 +67,9 @@ export default function CreateCard() {
                     type='text'
                     placeholder=' '
                     required
+                    name="company"
+                    onChange={handleChange}
+                    value={formData.company}
                   />
                   <label className='did-floating-label'>
                   company
@@ -65,6 +86,9 @@ export default function CreateCard() {
                     type='text'
                     placeholder=' '
                     required
+                    name="designation"
+                    onChange={handleChange}
+                    value={formData.designation}
                   />
                   <label className='did-floating-label'>
                   Designation
@@ -85,9 +109,9 @@ export default function CreateCard() {
           <p>Live Profile Preview</p>
           <div className='signup_phone-container'>
             <img src='/phone_bannner.svg' className='img-fluid' alt='' />
-            <h3>Name</h3>
-            <h4>Designation</h4>
-            <h4>Company Name</h4>
+            <h3>{formData.name}</h3>
+            <h4>{formData.company}</h4>
+            <h4>{formData.designation}</h4>
             <div className='signup_phone-boxs'>
               <div className='signup_phone-box'></div>
               <div className='signup_phone-box'></div>

@@ -34,7 +34,7 @@ export default function SIdebar() {
           <NavLink className="nav-link" aria-current="page" to="/setting"><FontAwesomeIcon icon={faGear} /> Settings</NavLink>
         </li>
       </ul>
-      <button class="btn btn-primary">Upgrade Now</button>
+      <button className="btn btn-primary">Upgrade Now</button>
     </div>
 
 </nav>

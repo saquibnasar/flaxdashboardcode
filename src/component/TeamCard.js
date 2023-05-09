@@ -10,7 +10,7 @@ export default function TeamCard() {
 <>
 <div className='teamCard row gap-3'>
     
-<button className="teamCard_btn col-3">
+<Link to="/homepage" className="teamCard_btn col-3">
     <span>
       <FontAwesomeIcon icon={faUser} />
       </span>
@@ -32,7 +32,7 @@ export default function TeamCard() {
    
 </button>
     </div>
-</button>
+</Link>
 
 <Link to="/createCard" className="add_btn col-3">
     <span>

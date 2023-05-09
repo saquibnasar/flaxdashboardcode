@@ -5,11 +5,13 @@ import Signup from "./component/Signup";
 import Devices from "./component/Devices";
 import Setting from "./component/Setting";
 import CreateCard from "./component/CreateCard";
+import HomePage from "./component/HomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/homepage' element={<HomePage />} />
         <Route path='/' element={<Home />} />
         <Route path='/createCard' element={<CreateCard />} />
         <Route path='/devices' element={<Devices />} />

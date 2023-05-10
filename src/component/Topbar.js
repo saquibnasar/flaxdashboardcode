@@ -8,13 +8,15 @@ import { faShare } from "@fortawesome/free-solid-svg-icons";
 export default function Topbar(props) {
   return (
     <nav className="navbar">
-      {props.type?  <button className="navbar-brand" type="button">
+      {props.type?
+      <button className="navbar-brand" type="button">
       <span className="setting-toggler-icon">
       <FontAwesomeIcon icon={faArrowLeft} />
       </span>
       Settings
    
-    </button>:  <button className="navbar-brand" type="button">
+    </button>
+    :  <button className="navbar-brand" type="button">
     My Team Cards
     <span className="navbar-toggler-icon">
       <FontAwesomeIcon icon={faPlus} />

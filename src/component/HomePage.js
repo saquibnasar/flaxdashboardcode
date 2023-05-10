@@ -6,6 +6,7 @@ import { faNfcSymbol } from "@fortawesome/free-brands-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faShareSquare } from "@fortawesome/free-solid-svg-icons";
 import { NavLink} from "react-router-dom";
+import AddCard from "./AddCard";
 
 export default function HomePage() {
   return (
@@ -63,7 +64,7 @@ FlaxCode</NavLink>
 
     </div>
        </nav>
-     <div className='links'>
+        <div className='links'>
     <div className="link_container">
     <div>
      <h2>
@@ -84,7 +85,7 @@ FlaxCode</NavLink>
  
      <img src='/bglink.png' alt='' className='img-fluid'/>
      </div>
-    </div>
+       </div>
        <div className='signup_phone text-center'>
           <p>Live Preview <FontAwesomeIcon icon={faShareSquare} /> </p>
           <div className='signup_phone-container'>
@@ -100,6 +101,7 @@ FlaxCode</NavLink>
             </div>
           </div>
         </div>
+        <AddCard/>
       </div>
       </div>
       </div>

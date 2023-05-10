@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="d-flex homePage">
       <SIdebar/>
       <div className="d-flex flex-direction-column">
-      <Topbar/>
+      <Topbar type="setting" title="" />
       <div className="homePage_container">
        <nav className="sidebar">
     <div className="sidebar-collapse">

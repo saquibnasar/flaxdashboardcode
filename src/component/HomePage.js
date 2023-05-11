@@ -9,6 +9,14 @@ import { NavLink} from "react-router-dom";
 import AddCard from "./AddCard";
 
 export default function HomePage() {
+  const addLin = ()=>{
+    const addcard = document.querySelector(".addcard");
+    if(addcard.classList.contains("d-none")){
+      addcard.classList.remove("d-none")
+    }else{
+      addcard.classList.add("d-none")
+    }
+  }
   return (
     <>
     <div className="d-flex homePage">
@@ -76,9 +84,8 @@ FlaxCode</NavLink>
      Social media handles and more
      </h3>
 
-     <button className="btn_add">
+     <button className="btn_add" onClick={addLin}>
      <FontAwesomeIcon icon={faPlus} /> 
-
         Add Links and contact info 
     </button>
     </div>
@@ -101,7 +108,7 @@ FlaxCode</NavLink>
             </div>
           </div>
         </div>
-        <AddCard/>
+        <AddCard />
       </div>
       </div>
       </div>

@@ -40,3 +40,15 @@ pre {
   flex-direction: column;
   gap: 68px;
 }
+.form-control:active,
+.form-control:focus,
+.form-control:hover,
+.form-control:focus-within,
+.form-control:visited,
+.form-control:focus-visible,
+.form-control:target,
+.form-control:visited,
+.form-control:focus-visible{
+  background: #e8f0fe !important;
+  color: #000000 !important;
+}

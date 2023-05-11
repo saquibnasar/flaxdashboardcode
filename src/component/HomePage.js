@@ -103,8 +103,8 @@ FlaxCode</NavLink>
             <div className='signup_phone-boxs'>
               <div className='signup_phone-box'></div>
               <div className='signup_phone-box'></div>
-              <div className='signup_phone-box'></div>
-              <div className='signup_phone-box'></div>
+              {/* <div className='signup_phone-box'></div>
+              <div className='signup_phone-box'></div>  */}
             </div>
           </div>
         </div>

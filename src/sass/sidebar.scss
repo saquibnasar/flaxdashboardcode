@@ -4,10 +4,10 @@
 .sidebar{
     background: #1D203C;
     width: 22%;
-    padding-bottom: 96px;
+    padding-bottom: 28px;
     .sidebar-brand{
         display: block;
-        padding-top: 48px;
+        padding-top: 38px;
         padding-left: 13px;
         img{
             width: 93.88px;
@@ -30,15 +30,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 32px;
     cursor: pointer;
     border: none;
+    margin-bottom: 31px;
         }
 
     .sidebar-nav{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 10px;
     .nav-box{
         background: #98C5FF;
     border-radius: 20px;
@@ -46,13 +47,13 @@
   
     }
     .nav-link{
-    padding: 18px 13px;
+    padding: 16px 13px;
     width: 100%;
     gap: 16px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     display: flex;
     align-items: center;

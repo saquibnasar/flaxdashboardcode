@@ -12,16 +12,16 @@ export default function Admin() {
   <label for="exampleFormControlInput1" className="form-label">Email</label>
   <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="email id"/>
 </div>
-      <div className="mb-3">
-  <label for="exampleFormControlInput1" className="form-label">Forget Password</label>
-  {/* <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Password"/> */}
-</div>
+      {/* <div className="mb-3">
+    <label for="exampleFormControlInput1" className="form-label">Forget Password</label>
+  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Password"/>
+   </div> */}
     </div>
     <div className="admin_authentication">
-      <div className='d-flex justify-content-between'>
-      <h1>
+      <div className='d-flex justify-content-between align-items-center mb-4'>
+      <h2>
       2-factor authentication 
-      </h1>
+      </h2>
       <div className="form-check form-switch">
   {/* <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/> */}
     <div className="tg-list-item">

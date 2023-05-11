@@ -7,8 +7,10 @@
     border-radius: 40px;
     width: 77%;
     position: absolute;
-    top: 15.9%;
+    top: 13.9%;
     left: 22.4%;
+    transition: 0.5s;
+    height: 85%;
     // display: none;
     transition: 0.5s ;
     .addcard_container{
@@ -35,6 +37,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 16px;
+        row-gap: 2rem;
         
         .addcard_link{
             background: rgba(29, 32, 60, 0.9);
@@ -140,6 +143,112 @@
         // }
        
      
+    }
+    .addlink{
+        .addlink-back{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            color: #858282;
+            display: inline-block;
+            margin-bottom: 48px;
+            cursor: pointer;
+            svg{
+                font-size: 22px;
+                margin-right: 10px;
+            }
+        }
+        .addlink_content{
+            .addlink_content-top{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                .addlink_content-top-icon{
+                    background: #3AE432;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 16px;
+                    font-size: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $white-color;
+                }
+                h1{
+                    margin-bottom: 0px;
+                }
+            }
+            .form{
+                padding: 0 0px;
+                margin-top: 0px;
+                .form-text{
+                    font-size: 20px;
+                }
+                .submit{
+                    justify-content: end;
+                    gap: 24px;
+                    .btn.btn-primary{
+                        background: rgba(0, 0, 0, 0.3);
+                        color: #fff;
+                        padding: 16px 48px;
+                        width: unset;
+                    }
+                    .btn.btn-primary:nth-child(1){
+                        background: $white-color;
+                        color: #252525;
+                    }
+                    .btn.btn-primary:hover{  
+                    background: #6c3dd3;
+                    color: $white-color;
+                    }
+                }
+            }
+        }
+        .addlink_phone{
+            .addlink_phone-frame{
+                background: url(../../public/bgPhone.png);
+                width: 325px;
+                height: 413px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 60px;
+                gap: 22px;
+                h3,h4,h5{
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 34px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                }
+                h4{
+                    font-weight: 500;
+                    font-size: 34px;
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 21px;
+                }
+                .signup_phone-box{
+                    background: rgba(217, 217, 217, 0.2);
+                    border-radius: 20px;
+                    width: 80%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    padding: 16px 0px;
+                    margin-top: 12px;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
 }

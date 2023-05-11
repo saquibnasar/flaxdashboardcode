@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -11,18 +11,36 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import AddLink from './AddLink';
 
 export default function AddCard() {
+  const [linkData, setLinkData] = useState({});
+  const [isClick, setIsClick] = useState(false);
+  const sendData = (data) => {
+    setLinkData(data)
+    setIsClick(!isClick)
+  
+    // const addlink = document.querySelector(".addlink");
+    // const addcard = document.querySelector(".addcard");
+    // console.log(data)
+    // if(addlink && addlink.classList.contains("d-none")){
+    //   addlink.classList.remove("d-none")
+    //   addcard.classList.add("d-none")
+    // }else{
+    //   addlink.classList.add("d-none")
+    //   addcard.classList.remove("d-none")
+    // }
+  
+  }
   return (
     <>
     <div className='addcard d-none'>
     <div className='addcard_container'>
-      {/* <div>
+      {!isClick? <div>
      <h1>
      Add content to card
      </h1>
      <p className='addcard_container-para'>
      Select from our wide variety of links and contact info below
      </p>
-     <div className='addcard_links'>
+     <div className='addcard_links' onClick={sendData.bind(this,{headerTitle:"phone", title: "Phone Number*", titleInput: "Phone Number*",linkTitleInput: "Call"})}>
      <div className='addcard_link'>
       <div className='addcard_link-item'>
        <div className='addcard_link-item-icon'>
@@ -131,7 +149,6 @@ export default function AddCard() {
         <FontAwesomeIcon icon={faPlus} /> 
      </div>
      </div>
-  
      <div className='addcard_link'>
       <div className='addcard_link-item'>
        <div className='addcard_link-item-icon'>
@@ -144,10 +161,10 @@ export default function AddCard() {
         <FontAwesomeIcon icon={faPlus} /> 
      </div>
      </div>
-    
      </div>
-     </div> */}
-     <AddLink />
+     </div>: <AddLink data={linkData} sendData={sendData} />}
+     
+    
      </div>
     </div>
     </>

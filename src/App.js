@@ -6,6 +6,8 @@ import Devices from "./component/Devices";
 import Setting from "./component/Setting";
 import CreateCard from "./component/CreateCard";
 import HomePage from "./component/HomePage";
+import FlaxCode from "./component/FlaxCode";
+import About from "./component/About";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='/createCard' element={<CreateCard />} />
         <Route path='/devices' element={<Devices />} />
         <Route path='/sign-up' element={<Signup />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/flaxcode' element={<FlaxCode />} />
         <Route path='/setting' element={<Setting type="setting" />} />
         <Route path='/setting_subscription' element={<Setting type="subscription" />} />
         <Route path='/setting_support' element={<Setting type="support" />} />

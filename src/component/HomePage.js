@@ -7,6 +7,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faShareSquare } from "@fortawesome/free-solid-svg-icons";
 import { NavLink} from "react-router-dom";
 import AddCard from "./AddCard";
+import LInks from "./LInks";
 
 export default function HomePage() {
   const addLin = ()=>{
@@ -73,7 +74,7 @@ FlaxCode</NavLink>
     </div>
        </nav>
         <div className='links'>
-    <div className="link_container">
+    {/* <div className="link_container">
     <div>
      <h2>
      This profile doesn’t have any linked content
@@ -91,7 +92,8 @@ FlaxCode</NavLink>
     </div>
  
      <img src='/bglink.png' alt='' className='img-fluid'/>
-     </div>
+     </div> */}
+      <LInks/>
        </div>
        <div className='signup_phone text-center'>
           <p>Live Preview <FontAwesomeIcon icon={faShareSquare} /> </p>

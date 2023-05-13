@@ -1,0 +1,21 @@
+@import "./custom.scss";
+@import "./font.scss";
+@import "./mediaqueries.scss";
+.linkPage{
+    .btn-link{
+        background: #FFFFFF;
+        border-radius: 80px;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #252525;
+        gap: 10px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}

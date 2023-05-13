@@ -8,7 +8,7 @@ export default function Admin() {
       <h1>
       Admin Details
       </h1>
-      <div className="mb-3">
+      <div className="">
   <label for="exampleFormControlInput1" className="form-label">Email</label>
   <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="email id"/>
 </div>
@@ -36,12 +36,12 @@ you log in on a device we don’t recognise.
       </p>
    
 
-      <div className="mb-3">
+      <div className="">
         <label for="exampleFormControlInput1" className="form-label">enter number</label>
         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="mobile number"/>
       </div>
 
-      <div className="mb-3">
+      <div className="">
         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Enter OTP"/>
       </div>
       <div className='d-flex justify-content-between'>

@@ -13,21 +13,10 @@ import AddLink from './AddLink';
 export default function AddCard() {
   const [linkData, setLinkData] = useState({});
   const [isClick, setIsClick] = useState(false);
+
   const sendData = (data) => {
     setLinkData(data)
     setIsClick(!isClick)
-  
-    // const addlink = document.querySelector(".addlink");
-    // const addcard = document.querySelector(".addcard");
-    // console.log(data)
-    // if(addlink && addlink.classList.contains("d-none")){
-    //   addlink.classList.remove("d-none")
-    //   addcard.classList.add("d-none")
-    // }else{
-    //   addlink.classList.add("d-none")
-    //   addcard.classList.remove("d-none")
-    // }
-  
   }
   return (
     <>
@@ -40,8 +29,8 @@ export default function AddCard() {
      <p className='addcard_container-para'>
      Select from our wide variety of links and contact info below
      </p>
-     <div className='addcard_links' onClick={sendData.bind(this,{headerTitle:"phone", title: "Phone Number*", titleInput: "Phone Number*",linkTitleInput: "Call"})}>
-     <div className='addcard_link'>
+     <div className='addcard_links'>
+     <div className='addcard_link' onClick={sendData.bind(this,{headerTitle:"phone", title: "Phone Number*", titleInput: "Phone Number*",linkTitleInput: "Call"})}>
       <div className='addcard_link-item'>
        <div className='addcard_link-item-icon'>
         <FontAwesomeIcon icon={faPhone} /> 
@@ -163,8 +152,6 @@ export default function AddCard() {
      </div>
      </div>
      </div>: <AddLink data={linkData} sendData={sendData} />}
-     
-    
      </div>
     </div>
     </>

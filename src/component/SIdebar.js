@@ -5,13 +5,13 @@ import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { faShareSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faNfcSymbol } from "@fortawesome/free-brands-svg-icons"
-import { NavLink} from "react-router-dom";
+import { NavLink,Link} from "react-router-dom";
 export default function SIdebar() {
   return (
     <nav className="sidebar">
-    <a className="sidebar-brand" href="/">
+    <Link className="sidebar-brand" to="/">
       <img className='img-fluid' src="/logofill.svg" alt=''/>
-      </a>
+      </Link>
    
     <div className="sidebar-collapse">
       <ul className="sidebar-nav">

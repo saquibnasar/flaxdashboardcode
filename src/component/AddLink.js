@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function AddLink(props) {
+  const [formData,setFormData] = useState({
+    linkData: "",
+    linkTitle: "",
+  })
 
+  const handleChange = (event) => {
+    setFormData(prevformData =>{
+      return {
+        ...prevformData,
+        [event.target.name]: event.target.value,
+      }
+    })
+  }
   return (
   <div className='addlink'>
   <div className='addlink-back' onClick={props.sendData}>
@@ -29,11 +41,14 @@ export default function AddLink(props) {
               {props.data.title}
                 </div>
                 <div className='did-floating-label-content input-group'>
-                  <input
+                   <input
                     className='did-floating-input'
-                    type='text'
+                    type='number'
                     placeholder=' '
                     required
+                    name="linkData"
+                    value={formData.linkData}
+                    onChange={handleChange}
                   />
                   <label className='did-floating-label'>
                   {props.data.titleInput}
@@ -50,6 +65,9 @@ export default function AddLink(props) {
                     type='text'
                     placeholder=' '
                     required
+                    name="linkTitle"
+                    value={formData.linkTitle}
+                    onChange={handleChange}
                   />
                   <label className='did-floating-label'>
                   {props.data.linkTitleInput}
@@ -60,6 +78,7 @@ export default function AddLink(props) {
               <button
                 type='submit'
                 className='btn btn-primary'
+                onClick={props.sendData}
                 >
                 Cancel
               </button>
@@ -78,7 +97,7 @@ export default function AddLink(props) {
             <h3>Name</h3>
             <h4>Designation</h4>
             <h5>Company Name</h5>
-            <div className='signup_phone-box'>+91 8010101010</div>
+            <div className='signup_phone-box'>{formData.linkTitle?formData.linkTitle:"Link title"}</div>
             {/* <div className='signup_phone-boxs'>
            
               <div className='signup_phone-box'></div>

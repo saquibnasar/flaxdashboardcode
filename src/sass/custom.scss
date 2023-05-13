@@ -52,3 +52,9 @@ pre {
   background: #e8f0fe !important;
   color: #000000 !important;
 }
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
